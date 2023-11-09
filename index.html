@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - JepaFoodie</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .rcpfntbtn{
+                text-decoration     : none;
+                color               : rgb(0, 0, 0);
+            }
+
+            html {
+            scroll-behavior         : smooth;
+            }
+
+            h1{
+                font-family         : Arial, Helvetica, sans-serif;
+            }
+
+            .imgctt{
+                width               : 100%;
+                border-radius       : 5%;
+            }
+
+            .container{
+                display             : flex;
+                text-align          : center;
+                justify-content     : center
+            }
+
+            .section{
+                flex                : 1;
+                width               : 2000px;
+                height              : 500px;
+            }
+
+            .bgimg-content{
+                background-color    : rgba(132, 68, 0, 0.45);
+                height: 420px;
+            }
+            .bgimg{
+                height              : 100%;
+                background-color    : rgb(255, 247, 0);
+            }
+
+            .a-hdr{
+                text-decoration     : none;
+                color               : rgb(226, 226, 226);
+            }
+            .buttonhdr{
+                border-radius       : 5%;
+                font-size           : 18px;
+                font-family         : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color    : rgb(222, 122, 0);
+                border              : none;
+            }
+
+            .left-align{
+                text-align          : left;
+            }
+        
+            .right-align-header{
+                text-align          : right;
+                background-color    : rgb(222, 144, 41);
+            }
+
+            .background{
+                background-image    : url("WhatsApp Image 2023-10-28 at 12.26.27_03645741.jpg");
+                background-size     : cover;
+                background-repeat   : no-repeat;
+            }
+
+            .title{
+                text-align          : left;
+                font-family         : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size           : 56px;
+            }
+
+            .buttonctt{
+                width               : auto;
+                height              : auto;
+                height              : 300px;
+                width               : 190px;
+                background-color    :rgba(255, 200, 0, 0.669);
+                border-style        : outset;
+                border-radius       : 20px;
+                border-color        :chocolate;
+
+            }
+
+            .midtext{
+                text-align          : center;
+                background-color    : chocolate;
+            }
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+        
+            if (this.hash !== "") {
+              event.preventDefault();
+        
+              var hash = this.hash;
+        
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
+
+    </head>
+
+    <body class="background">
+        <div class="bgimg">
+            <header>
+                <img src="Red and Beige Italian Restaurant Brand Logo (1).png" width="30%" height="auto"></div>
+
+                <div class="right-align-header">
+                    <button class="buttonhdr">
+                        <a href="index.html" class="a-hdr"><i class="fa fa-fw fa-home"></i>Home
+                    </button></a>
+                    <button class="buttonhdr">
+                        <a href="aboutus.html" class="a-hdr"><i class="fa fa-fw fa-user"></i>About Us
+                    </button></a>
+                    <button class="buttonhdr">
+                        <a href="ctt.html" class="a-hdr"><i class="fa fa-fw fa-address-book"></i>Contact
+                    </button></a>
+                    <button class="buttonhdr">
+                        <a href="crt.html" class="a-hdr"><i class="fa fa-fw fa-cart-plus"></i>Cart
+                    </button></a>
+
+                </div>
+            </header>
+        </div>
+
+        <div class="bgimg-content">
+        <h1 class="midtext">Temukan Resep Masakan Enak Disini</h1>
+            <div class="container">
+
+                <div class="section">
+                    <a href="kulkul.html" class="rcpfntbtn">
+                    <button class="buttonctt">
+                    <h2>Es Kul-kul</h2>
+                    <img src="WhatsApp Image 2023-10-19 at 21.04.13_b3089d4c.jpg" class="imgctt">
+                    </a></button>
+                </div>
+                
+                <div class="section">
+                    <button class="buttonctt">
+                    <a href="pcke.html" class="rcpfntbtn">
+                    <h2>Pancake</h2>
+                    <img src="WhatsApp Image 2023-10-19 at 21.03.21_2390e1b8.jpg" class="imgctt">
+                    </a></button>
+                </div>
+
+                <div class="section"><button class="buttonctt">
+                    <a href="lmnd.html" class="rcpfntbtn">
+                    <h2>Lemonade</h2>
+                    <img src="WhatsApp Image 2023-10-19 at 21.02.41_7fa81723.jpg" class="imgctt">
+                    </a></button>
+                </div>
+
+                <div class="section"><button class="buttonctt">
+                    <a href="kulkul-rcp.html" class="rcpfntbtn">
+                    <h2>Cookies</h2>
+                    <img src="Double-Chocolate-Chip-Cookies-Recipe-500x500.jpg" class="imgctt">
+                    </a></button>
+                </div>
+
+            </div>
+        </div>
+        <h1 class="midtext">[=]</h1>
+        <div class="container">
+            
+            </div>
+        </div>
+
+
+    </body>
+</html>
